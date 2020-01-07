@@ -11,6 +11,7 @@ from .serializer import ServantSerializer, ClassSerializer
 class ServantViewSet(viewsets.ModelViewSet):
     queryset = Servant.objects.all()
     serializer_class = ServantSerializer
+    filter_fields = ('rarity', )
 
 
 class ClassViewSet(viewsets.ModelViewSet):
