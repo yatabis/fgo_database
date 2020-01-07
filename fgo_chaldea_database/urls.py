@@ -20,5 +20,6 @@ from chaldea_database_api.urls import router
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include(router.urls))
+    path('api/', include(router.urls)),
+    path('', include('chaldea_database_web.urls')),
 ]

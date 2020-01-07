@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'chaldea_database_api.apps.ChaldeaDatabaseApiConfig',
+    'chaldea_database_web.apps.ChaldeaDatabaseWebConfig',
     'rest_framework',
     'django_filters',
 ]
