@@ -4,12 +4,14 @@ from .models import Servant, Class
 
 
 class ServantSerializer(serializers.ModelSerializer):
+    class_name = serializers.StringRelatedField(read_only=True)
+
     class Meta:
         model = Servant
-        fields = ('number', 'name', 'class_name', 'rarity')
+        fields = '__all__'
 
 
 class ClassSerializer(serializers.ModelSerializer):
     class Meta:
         model = Class
-        fields = ('name',)
+        fields = '__all__'
