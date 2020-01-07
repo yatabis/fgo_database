@@ -3,19 +3,19 @@
 {% block title %}サーヴァント一覧 | カルデアデータベース{% endblock %}
 
 {% block content %}
-  <div class="list-item">
   {% for servant in servants_list %}
-    <div class="list-icon">
-    </div>
-    <div class="list-name">
-      {{ servant.name }}
-    </div>
-    <div class="list-rarity">
-      {{ servant.get_rarity_display }}
-    </div>
-    <div class="list-class-name">
-      {{ servant.class_name }}
+    <div class="list-item">
+      <div class="list-icon">
+      </div>
+      <div class="list-name">
+        {{ servant.name }}
+      </div>
+      <div class="list-rarity">
+        {{ servant.get_rarity_display }}
+      </div>
+      <div class="list-class-name">
+        {{ servant.class_name }}
+      </div>
     </div>
   {% endfor %}
-  </div>
 {% endblock %}
