@@ -9,7 +9,7 @@ class Servant(models.Model):
     rarity = models.IntegerField(choices=((5, "★5"), (4, "★4"), (3, "★3"), (2, "★2"), (1, "★1"), (0, "★0")))
 
     def __str__(self):
-        return f"{self.rarity} {self.name} ({self.class_name})"
+        return f"{self.get_rarity_display()} {self.name} ({self.class_name})"
 
 
 class Class(models.Model):
