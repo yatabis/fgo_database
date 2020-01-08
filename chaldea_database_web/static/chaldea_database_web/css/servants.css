@@ -1,0 +1,82 @@
+div {
+  margin: 0;
+}
+
+.list-item {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 18vw 2fr 4fr 4fr 4fr 4fr 4fr;
+  grid-template-rows: 4vw 8vw 6vw;
+  width: calc(100% - 2px);
+  margin: 0;
+  border: solid 1px;
+}
+
+.list-icon {
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+  background-color: #ddd;
+  margin: 1vw;
+}
+
+.list-rarity {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  font-size: 1rem;
+  line-height: 4vw;
+  text-align: center;
+}
+
+.list-class-name {
+  grid-column: 3 / 8;
+  grid-row: 1 / 2;
+  font-size: 1rem;
+  line-height: 4vw;
+}
+
+.list-name {
+  grid-column: 2 / 8;
+  grid-row: 2 / 3;
+  font-size: 1.2rem;
+  line-height: 8vw;
+}
+
+.np-color {
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
+  font-size: 1rem;
+  line-height: 6vw;
+  text-align: center;
+}
+
+.np-target {
+  grid-column: 4 / 5;
+  grid-row: 3 / 4;
+  font-size: 1rem;
+  line-height: 6vw;
+  text-align: center;
+}
+
+.attribute {
+  grid-column: 5 / 6;
+  grid-row: 3 / 4;
+  font-size: 1rem;
+  line-height: 6vw;
+  text-align: center;
+}
+
+.policy {
+  grid-column: 6 / 7;
+  grid-row: 3 / 4;
+  font-size: 1rem;
+  line-height: 6vw;
+  text-align: center;
+}
+
+.character {
+  grid-column: 7 / 8;
+  grid-row: 3 / 4;
+  font-size: 1rem;
+  line-height: 6vw;
+  text-align: center;
+}

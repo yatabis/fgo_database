@@ -1,20 +1,39 @@
 {% extends "chaldea_database_web/base.html" %}
+{% load static %}
 
 {% block title %}サーヴァント一覧 | カルデアデータベース{% endblock %}
+
+{% block css %}<link href="{% static 'chaldea_database_web/css/servants.css' %}" rel="stylesheet">{% endblock %}
 
 {% block content %}
   {% for servant in servants_list %}
     <div class="list-item">
       <div class="list-icon">
       </div>
-      <div class="list-name">
-        {{ servant.name }}
-      </div>
       <div class="list-rarity">
         {{ servant.get_rarity_display }}
       </div>
       <div class="list-class-name">
         {{ servant.class_name }}
+      </div>
+      <div class="list-name">
+        {{ servant.name }}
+      </div>
+      <div></div>
+      <div class="np-color">
+        Arts
+      </div>
+      <div class="np-target">
+        補助
+      </div>
+      <div class="attribute">
+        地
+      </div>
+      <div class="policy">
+        秩序
+      </div>
+      <div class="character">
+        善
       </div>
     </div>
   {% endfor %}
