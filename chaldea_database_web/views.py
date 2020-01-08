@@ -9,3 +9,9 @@ class ServantsListView(ListView):
     model = Servant
     template_name = 'chaldea_database_web/servants.html'
     context_object_name = 'servants_list'
+
+
+class SynthesisListView(ListView):
+    model = Servant
+    template_name = 'chaldea_database_web/synthesis.html'
+    context_object_name = 'servants_list'
